@@ -1,0 +1,31 @@
+
+
+
+
+
+
+							PLAGIARISM DETECTOR
+
+					Project by Chitturi Sai Suman and Praneeth Kapila
+
+
+		PLAGIARISM:
+
+			Plagiarism is defined as the practice of directly copying and then presenting an existing
+		production without accurate citing or referencing, and/or passing off the product as one’s own,
+		without permission from the original producer.
+
+			Plagiarism is the most frequent offence under the Academic Code of Conduct, as a result of
+		a lack of proper acknowledgement. By understanding the plagiarism meaning and being able to identify
+		the plagiarism definition, you can be confident that you will avoid the consequences.
+
+
+		INSPIRATION:
+
+			Plagiarism became a serious issue now a days due to the presence of vast resources easily
+		available on the web, which makes developing plagiarism detection tool a useful and challengnig
+		task due to the scalability issues.
+
+			Our project is implementing a Plagiarism Detection Engine oriented for Programming Source codes.
+		A set of Programming source codes are tested for Plagiarism check and hence reported whether or not the
+		the pair of codes are Plagiarised.
