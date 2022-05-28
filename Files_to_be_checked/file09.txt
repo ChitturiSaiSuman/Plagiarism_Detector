@@ -1,0 +1,40 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include<string.h>
+#include<math.h>
+#define ll long long int
+int main() 
+{ 
+      int t;
+      scanf("%d",&t);
+      while(t--)
+       {
+            int n;
+            scanf("%d",&n);
+            int a[n],counter[n],j=0;
+            for(int i=1;i<=n;i++)
+	    {
+            	scanf("%d",&a[i]);
+	        if(a[i]==1)
+        	counter[j++]=i;
+            }
+            /*for(int i=0;i<j;i++)
+            printf("%d ",counter[i]);
+            
+            printf("\n");*/
+            int flag=0;
+            for(int i=0;i<j-1;i++)
+            {
+            	if(abs(counter[i]-counter[i+1])<6)
+                {
+		    flag=1;
+                    break;
+                }
+            }
+            if(flag==0)
+            printf("YES\n");
+            else printf("NO\n");
+       }
+      return 0; 
+}
+

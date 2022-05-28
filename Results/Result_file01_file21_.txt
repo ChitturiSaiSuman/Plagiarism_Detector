@@ -1,0 +1,132 @@
+
+
+			SUCCESS LOG! Details
+
+	Cumulative Matching Percentage: 93.77
+	Parameter Matching Percentage: 96.30
+	Function Matching Percentage: 100.00
+	Statement Matching Percentage: 85.00
+
+	Details of Source File
+
+Name of File: file01
+Number of Functions: 1
+Function Wise Details
+Function 1
+Name of Function: main
+Return Type: int
+Number of Arguments: 1
+Number of int arguments: 0
+Number of char arguments: 0
+Number of float Arguments: 0
+Number of bool Arguments: 0
+Number of long Arguments: 0
+Number of double Arguments: 0
+Number of int Variables: 11
+Number of char Variables: 0
+Number of float Variables: 0
+Number of bool Variables: 0
+Number of long Variables: 0
+Number of double Variables: 0
+Number of printf Statements: 1
+Number of scanf Statements: 3
+Number of for loops: 1
+Number of while loops: 2
+Number of if Statements: 3
+Number of else if Statements: 0
+Number of else Statements: 0
+Number of break Statements: 1
+Number of continue Statements: 0
+Total Number of Lines: 38
+
+	Program Details Continued...
+Number of Lines: 40
+Number of scanf Statements: 0
+Number of printf Statements: 0
+Number of for loops: 0
+Number of while loops: 0
+Number of if Statements: 0
+Number of else Statements: 0
+Number of else if Statements: 0
+Number of break Statements: 1
+Number of int Variables: 9
+Number of float Variables: 0
+Number of char Variables: 0
+Number of long Variables: 0
+Number of double Variables: 0
+Number of bool Variables: 0
+Number of Included Header Files: 1
+Number of #define pre-processors: 0
+Number of Structures: 0
+Number of typedef: 0
+Number of void Functions: 0
+Number of int Functions: 1
+Number of float Functions: 0
+Number of char Functions: 0
+Number of bool Functions: 0
+Number of long Functions: 0
+Number of double Functions: 0
+
+
+	Details of Destination File
+
+Name of File: file21
+Number of Functions: 1
+Function Wise Details
+Function 1
+Name of Function: main
+Return Type: int
+Number of Arguments: 1
+Number of int arguments: 0
+Number of char arguments: 0
+Number of float Arguments: 0
+Number of bool Arguments: 0
+Number of long Arguments: 0
+Number of double Arguments: 0
+Number of int Variables: 11
+Number of char Variables: 0
+Number of float Variables: 0
+Number of bool Variables: 0
+Number of long Variables: 0
+Number of double Variables: 0
+Number of printf Statements: 1
+Number of scanf Statements: 3
+Number of for loops: 1
+Number of while loops: 2
+Number of if Statements: 3
+Number of else if Statements: 0
+Number of else Statements: 0
+Number of break Statements: 1
+Number of continue Statements: 0
+Total Number of Lines: 38
+
+	Program Details Continued...
+Number of Lines: 41
+Number of scanf Statements: 0
+Number of printf Statements: 0
+Number of for loops: 0
+Number of while loops: 0
+Number of if Statements: 0
+Number of else Statements: 0
+Number of else if Statements: 0
+Number of break Statements: 11
+Number of int Variables: 9
+Number of float Variables: 0
+Number of char Variables: 0
+Number of long Variables: 0
+Number of double Variables: 0
+Number of bool Variables: 0
+Number of Included Header Files: 1
+Number of #define pre-processors: 0
+Number of Structures: 0
+Number of typedef: 0
+Number of void Functions: 0
+Number of int Functions: 1
+Number of float Functions: 0
+Number of char Functions: 0
+Number of bool Functions: 0
+Number of long Functions: 0
+Number of double Functions: 0
+
+
+				*****End of Log*****

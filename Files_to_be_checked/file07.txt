@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	// your code goes here
+	long long int r;
+	scanf("%lld",&r);
+	if(r%4==0) 
+	{
+	    printf("%lld",r);
+	}
+	else if(r%4==1) 
+	{
+	    printf("1");
+	}
+	else if(r%4==2) 
+	{
+	    printf("%lld",r+1);
+	}
+	else
+	{
+	    printf("0");
+	}
+	return 0;
+}
+

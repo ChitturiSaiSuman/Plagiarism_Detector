@@ -1,0 +1,77 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<stdint.h>
+inline int inp();
+int A[1000000];
+void Quick_Sort(int *A,int start,int end)
+{
+	int i,j,key,temp;
+	key=A[(start+end)/2];
+	i=start;
+	j=end;
+	while(i<=j)
+	{
+		while(A[i]<key)
+			i++;
+		while(A[j]>key)
+			j--;
+		if(i<=j)
+		{
+        	temp=A[i];
+        	A[i]=A[j];
+        	A[j]=temp;
+        	i++;
+        	j--;
+        }
+	}
+	if(start<j)
+		quicksort(A,start,j);
+	if(end>i)
+		quicksort(A,i,end);
+}
+ 
+inline int inp()
+{
+	int t=0;
+    char c;
+    c=getchar_unlocked();
+    while(c<'0' || c>'9')
+        c=getchar_unlocked();
+    while(c>='0' && c<='9'){
+        t=(t<<3)+(t<<1)+c-'0';
+        c=getchar_unlocked();
+    }
+    return(t);
+}
+ 
+int main()
+{
+	int n,i,happy,end;
+	long long x;
+	n=inp();
+	scanf("%lld",&x);
+	for(i=0;i<n;i++)
+		A[i]=inp();
+	Quick_Sort(A,0,n-1);
+	end=0;
+	while(x>=(long long)(A[end]+1)/2)
+	{
+		x=x-(long long)(A[end]+1)/2;
+		end++;
+		if(end==n)
+			break;
+	}
+	happy=0;
+	while(x>=(long long)(A[happy]/2))
+	{
+		x=x-(long long)(A[happy]/2);
+		happy++;
+		if(happy==end)
+			break;
+	}
+	printf("%d %d",n-end,happy);
+}
+ 
+
+ 

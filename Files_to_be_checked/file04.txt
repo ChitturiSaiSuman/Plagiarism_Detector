@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<stdint.h>
+ 
+inline int inp();
+void quicksort(int*,int,int);
+ 
+int a[1000000];
+ 
+int main()
+{
+	//freopen("New.txt","r",stdin);
+	int n,i,hap,end;
+	long long x;
+	n=inp();
+	scanf("%lld",&x);
+	for(i=0;i<n;i++)
+		a[i]=inp();
+	quicksort(a,0,n-1);
+	end=0;
+	while(x>=(long long)(a[end]+1)/2)
+	{
+		x=x-(long long)(a[end]+1)/2;
+		end++;
+		if(end==n)
+			break;
+	}
+	hap=0;
+	while(x>=(long long)(a[hap]/2))
+	{
+		x=x-(long long)(a[hap]/2);
+		hap++;
+		if(hap==end)
+			break;
+	}
+	printf("%d %d",n-end,hap);
+}
+ 
+void quicksort(int *a,int start,int end)
+{
+	int i,j,key,temp;
+	key=a[(start+end)/2];
+	i=start;
+	j=end;
+	while(i<=j)
+	{
+		while(a[i]<key)
+			i++;
+		while(a[j]>key)
+			j--;
+		if(i<=j)
+		{
+        	temp=a[i];
+        	a[i]=a[j];
+        	a[j]=temp;
+        	i++;
+        	j--;
+        }
+	}
+	if(start<j)
+		quicksort(a,start,j);
+	if(end>i)
+		quicksort(a,i,end);
+}
+ 
+inline int inp()
+{
+	int t=0;
+    char c;
+    c=getchar_unlocked();
+    while(c<'0' || c>'9')
+        c=getchar_unlocked();
+    while(c>='0' && c<='9'){
+        t=(t<<3)+(t<<1)+c-'0';
+        c=getchar_unlocked();
+    }
+    return(t);
+}
+ 

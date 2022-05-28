@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+     
+ 
+ int t,i ;
+    
+    scanf("%d",&t) ;
+    for(i=1;i<=t;i++)
+    {
+
+  int n,k ;
+        scanf("%d",&n);
+        if (n == 1) 
+  {
+            printf("1\n1 1\n") ;
+            continue;
+        }
+        printf("%d\n",n/2) ;
+
+        if ( n%2 != 0) 
+  {
+            printf("3 1 2 %d\n",n) ;
+        } else 
+  {
+            printf("2 1 2\n") ;
+        }
+        for (k = 4; k <= n; k+=2)
+  {
+
+            printf("2 %d %d\n",k-1,k);
+        }
+    }
+    return 0;
+}

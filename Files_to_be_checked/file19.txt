@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main(void)
+{   
+    int t,n,s,v,p,m,m1;
+    scanf("%d",&t);
+    while(t--)
+    {
+        m=0;
+        scanf("%d",&n);
+        while(n--)
+        {
+            scanf("%d%d%d",&s,&p,&v);
+            m1=(p/(s+1)*v);
+            if(m<m1)
+                m=m1;
+        }
+        printf("%d\n",m);
+    }
+}

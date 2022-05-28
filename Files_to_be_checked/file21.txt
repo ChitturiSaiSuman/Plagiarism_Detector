@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,t,n;
+    long long int ans;
+    long long int a[100000];
+    long long int counter;
+    scanf("%d",&t);
+    while(t--)
+    {
+        counter=0;
+        int ans=1,r=0;
+        scanf("%lld",&n);
+        for(i=0;i<n;i++)
+        {
+            scanf("%lld",&a[i]);
+        }
+        i=0;j=0;
+        while(i<=j && j<n)
+        {
+            ans*=a[j];
+            if(ans%4==0 || ans%2!=0)
+            {
+                counter+=1;
+            }
+            j++;
+            if(j==n)
+            {
+                r++;i+=1;
+                j=i;ans=1;
+                if(r==n)
+                {
+                    break;
+                }
+            }
+        }
+        printf("%lld\n",counter);
+    }
+    return 0;
+}
+

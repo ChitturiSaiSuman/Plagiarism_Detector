@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,t,n;
+    long long int answer;
+    long long int arr[100000];
+    long long int count;
+    scanf("%d",&t);
+    while(t--)
+    {
+        count=0;
+        int answer=1,r=0;
+        scanf("%lld",&n);
+        for(i=0;i<n;i++)
+        {
+            scanf("%lld",&arr[i]);
+        }
+        i=0;j=0;
+        while(i<=j && j<n)
+        {
+            answer*=arr[j];
+            if(answer%4==0 || answer%2!=0)
+            {
+                count+=1;
+            }
+            j++;
+            if(j==n)
+            {
+                r++;i+=1;
+                j=i;answer=1;
+                if(r==n)
+                {
+                    break;
+                }
+            }
+        }
+        printf("%lld\n",count);
+    }
+    return 0;
+}

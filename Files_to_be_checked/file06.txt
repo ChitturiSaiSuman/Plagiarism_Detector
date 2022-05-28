@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int countSetBits(int k)
+{
+    int c=0;
+    while(k>0)
+    {
+        c+=k%2;
+        k/=2;
+    }
+    return c;
+}
+int  main()
+{
+    int k,t,n,i,q,a[1000000],b[1000000],ans,e,even,odd,p;
+    scanf("%d",&t);
+    while(t--)
+    {
+	scanf("%d %d",&n,&q);
+        for(i=0;i<n;i++)
+	    scanf("%d",&a[i]);
+        for(i=0;i<q;i++)
+	{
+            even=0,odd=0;
+            scanf("%d",&p);
+            ans=countSetBits(p);
+            if(ans%2==0)
+	    {
+                printf("%d %d\n",ans,n-ans);
+            }
+            else
+	    {
+                 printf("%d %d\n",n-ans,ans);
+            }
+    	}
+    }
+    return 0;
+}
